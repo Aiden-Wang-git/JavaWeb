@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单页面</title>
+</head>
+
+<body>
+    <form>
+        昵称：<input name="username" value="请输入昵称"><br>
+        头像：<input type="file" name="head"><br>
+        密码：<input type="password" name="password"><br>
+        确认密码：<input type="password"><br>
+        Email:<input type="email" name="Email"><br>
+        姓名：<input name="truename"><br>
+        性别：<input name="sex" type="radio" value="男" checked>男<input name="sex" type="radio" value="女">女<br>
+        学历：<select name="education">
+            <option value="">请选择</option>
+            <option>初中毕业</option>
+            <option>高中毕业</option>
+            <option >中专毕业</option>
+            <option>大专毕业</option>
+            <option>本科毕业</option>
+            <option>硕士毕业</option>
+            <option>博士毕业</option>
+        </select><br>
+        出生日期：<input type="date" name="birthday"><br>
+        自我介绍：<textarea name="introduce" id="" cols="30" rows="10">介绍一下你自己吧！！！</textarea><br>
+        验证码：<input name="verrification_code"><br>
+        <input type="submit" />
+        <input type="reset" />
+        <input type="button" value="普通按钮" />
+    </form>
+</body>
+
+</html>
