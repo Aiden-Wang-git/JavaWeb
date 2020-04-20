@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            width: 100%;
+        }
+
+        .header div {
+            float: left;
+            width: 33.3%;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .header a {
+            padding-left: 10px;
+        }
+
+        .menu {
+            width: 100%;
+            background-color: black;
+            margin-bottom: 5px;
+        }
+
+        .menu ul {
+            margin: 0px;
+        }
+
+        .menu ul li {
+            display: inline;
+            list-style: none;
+            margin: 0px;
+        }
+
+        .menu a {
+            font-size: 20px;
+            color: blanchedalmond;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .lunbo {
+            width: 100%;
+        }
+
+        .lunbo img {
+            width: 100%;
+        }
+
+        .left {
+            float: left;
+            width: 16%;
+            height: 500px;
+        }
+
+        .right {
+            float: left;
+            width: 84%;
+            text-align: center;
+            height: 500px;
+        }
+        .big{
+            float: left;
+            width: 50%;
+            height: 250px;          
+        }
+        .small{
+            float: left;
+            width: 16.66%;
+            height: 250px;
+        }
+        .ad1 img{
+            width: 100%;
+        }
+        .foot{
+            width: 100%;
+        }
+        .foot p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <div>
+        <!-- logo -->
+        <div class="header">
+            <div>
+                <img src="../../img/logo2.png" height="40px">
+            </div>
+            <div>
+                <img src="../../img/header.jpg" height="40px">
+            </div>
+            <div>
+                <a href="#">登录</a>&nbsp;&nbsp;
+                <a href="#">注册</a>&nbsp;&nbsp;
+                <a href="#">购物车</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- 菜单 -->
+        <div class="menu">
+            <ul>
+                <li>&nbsp;<a href="#">首页</a>&nbsp;</li>
+                <li>&nbsp;<a href="#">首页</a>&nbsp;</li>
+                <li>&nbsp;<a href="#">首页</a>&nbsp;</li>
+                <li>&nbsp;<a href="#">首页</a>&nbsp;</li>
+            </ul>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="lunbo">
+            <img src="../../img/1.jpg"id="lunboid">
+        </div>
+
+        <!-- 热门广告 -->
+        <div class="hot">
+            <div>
+                <h2 style="display: inline;">热门商品</h2>
+                <img src="../../img/title2.jpg">
+            </div>
+            <div>
+                <div class="left">
+                    <img src="../../img/big01.jpg">
+                </div>
+                <div class="right">
+                    <div class="big">
+                        <img src="../../img/middle01.jpg">
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <di class="clear"></div>
+        <!-- 广告 -->
+        <div class="ad1">
+            <img src="../../img/ad.jpg">
+        </div>
+
+        <!-- 最新 -->
+        <div class="hot">
+            <div>
+                <h2 style="display: inline;">热门商品</h2>
+                <img src="../../img/title2.jpg">
+            </div>
+            <div>
+                <div class="left">
+                    <img src="../../img/big01.jpg">
+                </div>
+                <div class="right">
+                    <div class="big">
+                        <img src="../../img/middle01.jpg">
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                    <div class="small">
+                        <img src="../../img/small08.jpg">
+                        <p><a href="#">电饭煲</a></p>
+                        <p>
+                            <font color="red">￥500.00</font>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 广告 -->
+        <div class="ad1">
+            <img src="../../img/footer.jpg">
+        </div>
+        <!-- 版权foot -->
+        <div class="foot">
+            <p>
+                &nbsp;<a href="#">关于我们</a>&nbsp;
+                &nbsp;<a href="#">联系我们</a>&nbsp;
+                &nbsp;<a href="#">招贤纳士</a>&nbsp;
+                &nbsp;<a href="#">法律声明</a>&nbsp;
+                &nbsp;<a href="#">友情链接</a>&nbsp;
+                &nbsp;<a href="#">支付方式</a>&nbsp;
+                &nbsp;<a href="#">配送方式</a>&nbsp;
+                &nbsp;<a href="#">服务声明</a>&nbsp;
+                &nbsp;<a href="#">广告声明</a>&nbsp;
+            </p>
+            <p>Copyright &copy; 2005-2016 传智商城 版权所有</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var i = 1;
+    function init(){
+        setInterval(changeimage,1000);
+    }
+    function changeimage(){
+        var obj = document.getElementById("lunboid");
+        ++i;
+        obj.src="../../img/"+i+".jpg"
+        if(i>=3){
+            i=0
+        }
+    }
+</script>
+</html>

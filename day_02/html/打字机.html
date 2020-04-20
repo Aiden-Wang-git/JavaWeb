@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var s = "我们的明天会更加的美好！";
+    var i = 0;
+    var obj;
+    function init(){
+        obj = document.getElementById("divid");
+        setInterval(show,200);
+    }
+    function show(){
+        ++i;
+        var s_ = s.substring(0,i);
+        obj.innerHTML=s_;
+        if(i==s.length){
+            i=0;
+        }
+    }
+</script>
+<body onload="init()">
+    <div id="divid"></div>
+</body>
+</html>

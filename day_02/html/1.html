@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: yellow;
+        }
+        .cls1{
+            background-color: brown;
+        }
+        span{
+            background-color: cornflowerblue;
+        }
+        span[color="min"]{
+            background-color: darkgreen;
+        }
+        div span{
+            font-size: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/1.css" type="text/css">
+</head>
+<body>
+    <div>好好学习正常</div>
+    <div style="background-color: red;">好好学习内联</div>
+    <div id="div1">好好学习内部设置</div>
+    <div id="css1">好好学习外部设置</div>
+    <div class="cls1">好好学习class</div>
+    <span>span</span>
+    <span color="min">span自己设置属性</span>
+    <div>
+        <span>我很大</span>
+    </div>
+</body>
+</html>
