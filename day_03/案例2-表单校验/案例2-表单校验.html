@@ -7,19 +7,19 @@
 	</head>
 
 	<body>
-		<form action="#" method="get">
+		<form action="#" method="get" onsubmit="return onsubmit1()">
 			<table width="60%" height="60%"  align="center" bgcolor="#ffffff">
 				<tr>
 					<td colspan="3">会员注册USER REGISTER</td>
 				</tr>
 				<tr>
 					<td width="20%">用户名:</td>
-					<td width="40%"><input type="text" name="username" id="username"></td>
+					<td width="40%"><input type="text" name="username" id="username" onblur="loseFou(this)"></td>
 					<td width="40%"><span id="username_msg"></span></td>
 				</tr>
 				<tr>
 					<td>密码:</td>
-					<td><input type="password" name="password" id="password"></td>
+					<td><input type="password" name="password" id="password" onblur="loseFou(this)"></td>
 					<td><span id="password_msg"></span></td>
 				</tr>
 				<tr>
@@ -64,4 +64,34 @@
 			</table>
 		</form>
 	</body>
+	<script>
+		function onsubmit1(){
+			var flag = true;
+			var username_value = document.getElementById("username").value;
+			var password_value = document.getElementById("password").value;
+			if(username_value == null || username_value ==""){
+				document.getElementById("username_msg").innerHTML = "用户名不能为空！";
+				document.getElementById("username_msg").style.color = "red";
+				flag = false;
+			}
+			else{
+				document.getElementById("username_msg").innerHTML = "";
+			}
+			if(password_value == null || password_value ==""){
+				document.getElementById("password_msg").innerHTML = "密码不能为空！";
+				document.getElementById("password_msg").style.color = "red";
+				flag = false;
+			}
+			else{
+				document.getElementById("password_msg").innerHTML = "";
+			}
+			return flag;
+		}
+		function loseFou(obj){
+			var objvalue = obj.value;
+			if(objvalue == ""){
+				alert()
+			}
+		}
+	</script>
 </html>

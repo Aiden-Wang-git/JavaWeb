@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    姓名：<input type="text" value="Tom" id="username" onfocus="getfou()" onblur="losefou()">
+    <span id="span1"></span>
+</body>
+<script>
+    function getfou(){
+        var id1 = document.getElementById("username");
+        document.getElementById("span1").innerHTML = id1.value;
+    }
+    function losefou(){
+        var id1 = document.getElementById("username");
+        alert(id1.value)
+    }
+</script>
+</html>
