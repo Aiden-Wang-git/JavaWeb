@@ -3,6 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script>
+			function selectAll(obj){
+				var flag=obj.checked;
+				var arr=document.getElementsByClassName("itemSelect");
+				for(var i=0;i<arr.length;++i){
+					arr[i].checked=flag;
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<table id="tab1" border="1" width="800" align="center" >

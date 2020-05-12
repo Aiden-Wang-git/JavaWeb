@@ -3,7 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		
+		<script>
+			onload = function(){
+				var arr = document.getElementsByTagName("tr");
+				for(var i = 1;i<arr.length;++i){
+					if(i%2==0){
+						arr[i].style.background = "#FFFFCC"
+					}
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<table id="tab1" border="1" width="800" align="center" >

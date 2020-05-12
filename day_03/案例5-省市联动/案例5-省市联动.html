@@ -11,6 +11,16 @@
 			arr[2] = new Array("沈阳市","锦州市","大连市","铁岭市");
 			arr[3] = new Array("郑州市","洛阳市","安阳市","南阳市");
 		</script>
+		<script>
+			function sleCity(index){
+				var cities=arr[index];
+				var cityobj=document.getElementsByName("city")[0];
+				cityobj.innerHTML="<option >-请选择-</option>";
+				for(var i=0;i<cities.length;++i){
+					cityobj.innerHTML+="<option >"+cities[i]+"</option>";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<form action="#" method="get">
@@ -26,7 +36,7 @@
 				<br>
 			头像:<input type="file" name="photo"><br>
 			籍贯:
-				<select name="pro">
+				<select name="pro" onchange="sleCity(this.value)">
 					<option value="0">黑龙江</option>
 					<option value="1">吉林</option>
 					<option value="2">辽宁</option>
