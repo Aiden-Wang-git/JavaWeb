@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+</head>
+<body>
+<img alt="验证码" src="/day_10_war_exploded/code" title="看不清楚，换一张！" onclick="changeImg(this)">
+</body>
+<script type="text/javascript">
+    function changeImg(obj) {
+        obj.src="/day_10_war_exploded/code?i="+Math.random();
+    }
+</script>
+</html>

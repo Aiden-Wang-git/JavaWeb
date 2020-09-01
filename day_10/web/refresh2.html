@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--   http-equiv="refresh":响应头
+       content="3,url=/day_10_war_exploede/refresh2.html"：响应体-->
+    <meta http-equiv="refresh" content="3,url=/day_10_war_exploded/refresh1.html">
+    <title>refresh</title>
+</head>
+<body>
+    这是refresh2,<span id="sid">3</span>秒之后跳转refresh1.
+</body>
+<script type="text/javascript">
+    onload =function () {
+        setInterval(changeS,1000)
+    }
+    i=3;
+    function changeS() {
+        var obj = document.getElementById("sid");
+        obj.innerHTML = --i;
+    }
+</script>
+</html>
